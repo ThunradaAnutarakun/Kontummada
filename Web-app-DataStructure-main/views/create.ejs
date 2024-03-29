@@ -1,0 +1,19 @@
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+<body>
+  <%- include("./partials/nav.ejs") %>
+
+  <div class="create-user content">
+    <form action="/users" method="POST">
+      <label for="firstname">User firstname:</label>
+      <input type="text" id="firstname" name="firstname" required>
+      <label for="lastname">User lastname:</label>
+      <input type="text" id="lastname" name="lastname" required>
+      <label for="phone">User phone:</label>
+      <textarea id="phone" name="phone" required></textarea>
+      <button>Submit</button>
+    </form>
+  </div>
+  <%- include("./partials/footer.ejs") %>
+</body>
+</html>

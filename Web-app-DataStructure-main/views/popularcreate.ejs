@@ -1,0 +1,17 @@
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+<body>
+  <%- include("./partials/nav.ejs") %>
+
+  <div class="create-user content">
+    <form action="/popular" method="POST">
+      <label for="name">name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="price">price:</label>
+      <input type="text" id="price" name="price" required>
+      <button>Submit</button>
+    </form>
+  </div>
+  <%- include("./partials/footer.ejs") %>
+</body>
+</html>
